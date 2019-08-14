@@ -12,15 +12,8 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 // Add routes, both API and view
-// app.use(routes);
+app.use(routes);
 
-const test = {
-  success: "Test succesful!"
-}
-
-app.get("/api/test", function(req, res) {
-  res.json(test);
-});
 
 // Connect to a DB here && require it at the top
 
