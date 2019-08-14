@@ -1,0 +1,35 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  height: 100%;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.siteContent {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+} 
+
+.switchBox {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+ 
+}
+

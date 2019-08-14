@@ -1,0 +1,35 @@
+.compFooter {
+    width: 100%;
+    margin-top: auto;
+}
+
+.bba {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    height: 100px;
+    width: 100%;
+}
+
+
+.footerSections {
+    background: rgb(190, 187, 187);
+    height: 150px;
+    
+}
+
+.footerCol1 {
+
+}
+
+.footerCol2 {
+    /* border-left: 1px solid white;
+    border-right: 1px solid white; */
+}
+
+.footerCol3 {
+    
+}
+
+
+
