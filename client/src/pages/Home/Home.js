@@ -2,6 +2,7 @@ import React, { Component } from "react";
 // import API from "../../utils/API";
 import { Row, Col } from 'reactstrap';
 // import { Link } from "react-router-dom";
+import Insta from "../../components/Insta"
 import axios from 'axios'
 import "./Home.css"
 
@@ -12,7 +13,7 @@ class Home extends Component {
   };
 
   componentDidMount() {
-    axios.get('https://api.instagram.com/v1/users/self/media/recent/?access_token=18089565266.844d947.aa967012aafe470cb906a68ba2f12128')
+    axios.get('https://api.instagram.com/v1/users/self/media/recent/?access_token=##########')
     .then(res => {
      console.log(res.data.data);
      const fullArr = res.data.data
@@ -44,21 +45,11 @@ class Home extends Component {
   render() {
     return (
      
-      <div className="homeContainer">
-        <Row id="instaRow1">
-          {this.state.instaRow1.map(pic => (
-            <div className="instaBox" key={pic.images.standard_resolution.url}>
-              <img className="imgBox"src={pic.images.standard_resolution.url} alt="instagram"/>
-            </div>
-          ))}
-        </Row>
-        <Row id="instaRow2">
-          {this.state.instaRow2.map(pic => (
-            <div className="instaBox" key={pic.images.standard_resolution.url}>
-              <img className="imgBox"src={pic.images.standard_resolution.url} alt="instagram"/>
-            </div>
-          ))}
-        </Row>
+      <div>
+        <Insta
+          instaRow1={this.state.instaRow1}
+          instaRow2={this.state.instaRow2}
+        />
       </div>
 
     );

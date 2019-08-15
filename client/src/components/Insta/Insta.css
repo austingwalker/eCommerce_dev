@@ -3,7 +3,9 @@
     margin-bottom: 50px;
 }
 
-
+#btnRow {
+    margin: 50px;
+}
 
 .instaBox {
     display: flex;
@@ -45,12 +47,10 @@
 
 @media screen and (max-width: 414px) {
     
-    
-
-    
-  
-
-    
+   
 
   }
+
+
+
 
