@@ -1,0 +1,96 @@
+.navigationContainer {
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.leLogoBox {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.leLogo {
+    width: 200px;
+    height: 100px;
+}
+
+#logoRow {
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid tan;
+}
+
+#navBox #mainUl {
+    list-style:none;
+    width: 100%;
+    
+}
+
+#navBox #mainUl .li{
+   display: inline-block;
+}
+
+
+#navBox #mainUl #subUl{
+    display: none;
+}
+
+#navBox #mainUl .li:hover #subUl{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    list-style: none;
+}
+
+
+
+#mainUlRow {
+  
+}
+
+#mainUl {
+    
+}
+
+.page {
+    color: black;
+    padding: 8px;
+    font-family: "Montserrat","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+.page:hover{
+    color: rgb(197, 117, 13);
+    text-decoration: none;
+}
+
+.companyPage {
+    font-family: "Montserrat","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    margin-top: 3.4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    
+}
+
+.companyPage:hover{
+    color: rgb(197, 117, 13);
+    text-decoration: none;
+}
+
+
+.li {
+    
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .page {
+        font-size: 11px;
+    }
+
+    .companyPage {
+        font-size: 11px;
+        margin-top: 6px;
+    }
+
+}

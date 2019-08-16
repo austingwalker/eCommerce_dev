@@ -1,0 +1,58 @@
+.leLogoBoxSB {
+    text-align: center;
+    margin-top: 60px;
+}
+.leLogoSB {
+    width: 200px;
+    height: 100px;
+}
+
+
+#sidebarRow{
+    position: fixed;
+    top: 0;
+    left: 1;
+    background: white;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+#sidebarBox{
+    margin: auto;
+    width: 100%
+}
+
+#sidebarNavBox{
+    border-radius: 5px;
+
+}
+
+#menuBox{
+    text-align: left;
+    width: 30%;
+}
+
+.menuI {
+    border-bottom: 1px solid gray;
+    align-items: center;
+}
+
+.menuIC {
+   
+}
+
+.menuTitle{
+    color: black;
+    font-family: "Montserrat","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.menuTitle:hover{
+    color: rgb(197, 117, 13);
+    text-decoration: none;
+}
+
+
+

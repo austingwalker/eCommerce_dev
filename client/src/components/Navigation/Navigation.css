@@ -1,32 +1,11 @@
 .navigationContainer {
     padding: 10px;
     position: relative;
+    margin-bottom: 20px;
 }
 
-.leLogoBox {
-    text-align: center;
-}
-.leLogo {
-    /* background: url("http://lee-elmers.com/wp-content/uploads/2018/04/LEblacklogo-02.png"); */
-    width: 200px;
-    height: 100px;
-}
 
-.navCol {
-    padding: 0;
-    width: 100%;
-    border-bottom: 1px solid tan;
-}
 
-.navbar {
-   
-}
 
-.navBox {
-    flex-wrap: wrap;
-    
-}
 
-/* .navItem {
-    float: right;
-} */
+
