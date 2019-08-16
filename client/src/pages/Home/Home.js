@@ -28,8 +28,6 @@ class Home extends Component {
       console.log(arrFirstHalf)
       console.log(arrSecondHalf)
 
-
-
       this.setState({
         instaRow1: arrFirstHalf,
         instaRow2: arrSecondHalf,
@@ -46,6 +44,22 @@ class Home extends Component {
     return (
      
       <div>
+        <Row id="homeContainer">
+          {/* <Col > */}
+          <div className="storyColVid">
+            {/* <iframe width="560" height="315" src="https://www.youtube.com/watch?v=RrAFyWIpkOQ" frameborder="0" allowfullscreen></iframe> */}
+
+            <iframe id="storyVid" width="560" height="315" src="https://www.youtube.com/embed/RrAFyWIpkOQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" ></iframe>
+          </div>
+          {/* </Col> */}
+          {/* <Col className="storyCol"> */}
+          <div className="storyColP">
+            <p className="storyP">We repurpose upcycled goods and leather to create beautiful new items that you’ll treasure for years to come. You can commission gorgeous gun holsters, knife sheaths, custom leather belts, kitchen & barware and more. We’ll consult with you to get an idea of what you’re looking for, then bring it to life.</p>
+
+            <p className="storyP">We bring our trademark attention to detail and craftsmanship to every single piece that we make, so you can rest easy knowing you’re getting something quality and original.</p>
+          </div>
+          {/* </Col> */}
+        </Row>
         <Insta
           instaRow1={this.state.instaRow1}
           instaRow2={this.state.instaRow2}
