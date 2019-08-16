@@ -13,7 +13,7 @@ class Home extends Component {
   };
 
   componentDidMount() {
-    axios.get('https://api.instagram.com/v1/users/self/media/recent/?access_token=#############')
+    axios.get('https://api.instagram.com/v1/users/self/media/recent/?access_token=##########')
     .then(res => {
      console.log(res.data.data);
      const fullArr = res.data.data

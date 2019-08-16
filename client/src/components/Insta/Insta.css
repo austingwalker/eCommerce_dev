@@ -13,30 +13,40 @@
     /* position: relative; */
 }
 
+.col {
+    float: left;
+}
+
 #instaBtnCol {
-    margin: 50px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
 #instaBtnBox {
-    border: 1px solid black;
-    border-radius: 25px;
     padding: 5px;
 }
 
 
 
 #instaBtn {
-    border: none;
+    border: 1px solid black;
+    border-radius: 25px;
     background: white;
     font-size: 25px;
+    padding: 10px;
     cursor: pointer;
 }
 
+#instaBtn:hover {
+    border: 1px solid rgb(197, 117, 13);
+    color: rgb(197, 117, 13);
+   
+}
 
 
 .icon {
-    color: black
+    color: black;
+    font-size: 25px;
 }
 
 
@@ -85,13 +95,28 @@
     opacity: 1;
    }
 
+@media screen and (max-width: 1015px) {
+    #instaBtn {
+        font-size: 20px;
+    }
+    .icon {
+        font-size: 20px;
+    }
+}
 
+/* @media screen and (max-width: 855px) {
+    #instaBtn {
+        font-size: 12px;
+    }
+} */
 
 @media screen and (max-width: 414px) {
     .caption {
         cursor: pointer;
         font-size: 7px;
     }
+
+   
   }
 
 

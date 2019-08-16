@@ -6,15 +6,15 @@ import "./Insta.css"
 const Insta = (props) => (
   <div className="instaContainer">
     <Row >
-    <Col></Col>
+    
     <Col id="instaBtnCol">
     <a href="https://www.instagram.com/l_e_dev/" target="_blank">
     <div id="instaBtnBox">
-      <button id="instaBtn">Follow Us on Instagram </button> <i className="fab fa-instagram fa-2x icon"></i>
+      <button id="instaBtn">Follow Us on Instagram</button> 
     </div>
     </a>
     </Col>
-    <Col></Col>
+    
     </Row>
     <Row id="instaRow1">
       {props.instaRow1.map(pic => (
