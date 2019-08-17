@@ -24,11 +24,20 @@
 }
 
 .footerCol1 {
-
+    margin-top: 3%;
+    margin-left: 0;
+    margin-right:0;
+    margin-bottom: 0;
+    padding:0;
+    text-align: center;  
 }
 
 .footerCol2 {
-    margin-top: 12.75%;
+    margin-top: 3%;
+    margin-left: 0;
+    margin-right:0;
+    margin-bottom: 0;
+    padding:0;
     text-align: center;
     /* border-left: 1px solid white;
     border-right: 1px solid white; */
@@ -40,29 +49,75 @@
 }
 
 .footerCol3 {
-    margin-top: 10%;
+    margin-top: 3%;
+    margin-left: 0;
+    margin-right:0;
+    margin-bottom: 0;
+    padding:0;
     text-align: center;   
 }
 
-#connect {
-    font-family: "Roboto","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+#company {
+    font-family: 'Open Sans Condensed', sans-serif;
+    /* font-family: "Roboto","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif; */
     font-size: 1.25em;
     /* font-weight: 600; */
     color: #7b7b7b;
 }
 
-#email {
+
+.footerP {
     font-family: "Roboto","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #7b7b7b;
+    margin: 0;
+}
+
+.trademark {
+    font-family: "Roboto","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #7b7b7b;
+    margin: 0;
+    margin-top: 40%;
+   
+}
+
+.footerNav {
+    font-family: "Roboto","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #7b7b7b;
+    margin: 0;
+    text-decoration: none;
+}
+
+.footerNav:hover {
     color: #7b7b7b;
 }
 
-#contact {
+#vendor {
+    font-family: 'Open Sans Condensed', sans-serif;
+    /* font-family: "Roboto","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif; */
+    font-size: 1.25em;
+    /* font-weight: 600; */
     color: #7b7b7b;
-    text-decoration: underline;
-    font-family: "Roboto","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 0;
-
 }
+
+#heaven {
+    font-family: 'Open Sans Condensed', sans-serif;
+    /* font-family: "Roboto","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif; */
+    color: #7b7b7b;
+    margin: 0;
+}
+
+#mailing{
+    font-family: 'Open Sans Condensed', sans-serif;
+    /* font-family: "Roboto","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif; */
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #7b7b7b;
+    /* margin-top: 25px; */
+}
+
+
+
+
 
 @media screen and (max-width: 800px) {
     
@@ -78,6 +133,45 @@
     .bba{
         font-size: 20px;
         padding: 10px;
+    }
+
+    #vendor {
+        font-size: 1em;
+    }
+
+    #mailing{
+        
+        font-size: 1em;
+    }
+
+    #company {
+        font-size: 1em;
+    }
+
+    #heaven {
+        font-size: 11px;
+    }
+
+    .footerP {
+        font-size: 11px;
+    }
+
+    .footerCol1 {
+       padding: 20px;
+    }
+    
+    .footerCol2 {
+        padding: 20px;
+    }
+    
+    
+    .footerCol3 {
+        padding: 20px;
+    }
+
+    .trademark {
+        font-size: 10px;
+        margin-top: 100%;
     }
 
 }
