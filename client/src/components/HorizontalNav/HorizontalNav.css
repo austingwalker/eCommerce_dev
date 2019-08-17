@@ -16,6 +16,10 @@
 #logoRow {
     margin-bottom: 10px;
     text-align: center;
+    /* border-bottom: 1px solid tan; */
+}
+
+#navBox {
     border-bottom: 1px solid tan;
 }
 

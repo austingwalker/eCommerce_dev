@@ -1,19 +1,24 @@
-#homeContainer {
+#storyRow {
     border-bottom: 1px solid tan;
     margin-bottom: 100px;
 }
 
 
 .storyColVid {
-    padding: 50px;
+    /* padding: 50px; */
+    /* padding-right: 25px; */
+    margin-top: 50px;
     margin-bottom: 50px;
-    width: 50%;
+    width: 100%;
+    float: left;
 }
 
 .storyColP {
     padding: 50px;
+    padding-left: 25px;
     margin-bottom: 50px;
-    width: 50%;
+    /* width: 50%; */
+    float: left;
 }
 
 #storyVid {
@@ -22,8 +27,18 @@
 
 .storyP {
     font-family: "Montserrat","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 21.5px;
+    font-size: 20px;
     word-wrap: break-word;
+}
+
+#what {
+    font-family: "Montserrat","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-bottom: 15px;
+}
+
+#how {
+    font-family: "Montserrat","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-bottom: 15px;
 }
 
 @media screen and (max-width: 1025px) {

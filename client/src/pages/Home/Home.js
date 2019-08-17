@@ -44,21 +44,20 @@ class Home extends Component {
     return (
      
       <div>
-        <Row id="homeContainer">
-          {/* <Col > */}
+        <Row id="storyRow">
           <div className="storyColVid">
-            {/* <iframe width="560" height="315" src="https://www.youtube.com/watch?v=RrAFyWIpkOQ" frameborder="0" allowfullscreen></iframe> */}
-
-            <iframe id="storyVid" width="560" height="315" src="https://www.youtube.com/embed/RrAFyWIpkOQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" ></iframe>
+            <iframe id="storyVid" width="100%" height="500" src="https://www.youtube.com/embed/RrAFyWIpkOQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" ></iframe>
           </div>
-          {/* </Col> */}
-          {/* <Col className="storyCol"> */}
-          <div className="storyColP">
+          <Col md="1"></Col>
+          <Col md="5" className="storyColP">
+            <h5 id="what">WHAT WE DO</h5>
             <p className="storyP">We repurpose upcycled goods and leather to create beautiful new items that you’ll treasure for years to come. You can commission gorgeous gun holsters, knife sheaths, custom leather belts, kitchen & barware and more. We’ll consult with you to get an idea of what you’re looking for, then bring it to life.</p>
-
+          </Col>
+          <Col md="5" className="storyColP">
+          <h5 id="how">HOW WE DO IT</h5>
             <p className="storyP">We bring our trademark attention to detail and craftsmanship to every single piece that we make, so you can rest easy knowing you’re getting something quality and original.</p>
-          </div>
-          {/* </Col> */}
+          </Col>
+          <Col md="1"></Col>
         </Row>
         <Insta
           instaRow1={this.state.instaRow1}

@@ -1,22 +1,25 @@
 .compFooter {
     width: 100%;
     margin-top: auto;
+    padding-top: 100px;
 }
 
 .bba {
     text-align: center;
     font-size: 50px;
-    font-weight: bold;
+    /* font-weight: bold; */
     /* height: 100px; */
     height: 100%;
     width: 100%;
-    font-family: "Montserrat","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    /* font-family: "Montserrat","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif; */
+    margin-bottom: 100px;
 }
 
 
 .footerSections {
-    background: rgb(190, 187, 187);
-    height: 150px;
+    background: #e9e9e9;
+    height: 300px;
+   
     
 }
 
@@ -25,12 +28,40 @@
 }
 
 .footerCol2 {
+    margin-top: 12.75%;
+    text-align: center;
     /* border-left: 1px solid white;
     border-right: 1px solid white; */
 }
 
+#trademark {
+    font-family: "Roboto","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #7b7b7b;
+}
+
 .footerCol3 {
-    
+    margin-top: 10%;
+    text-align: center;   
+}
+
+#connect {
+    font-family: "Roboto","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.25em;
+    /* font-weight: 600; */
+    color: #7b7b7b;
+}
+
+#email {
+    font-family: "Roboto","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #7b7b7b;
+}
+
+#contact {
+    color: #7b7b7b;
+    text-decoration: underline;
+    font-family: "Roboto","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 0;
+
 }
 
 @media screen and (max-width: 800px) {
