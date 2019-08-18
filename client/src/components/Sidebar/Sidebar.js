@@ -24,37 +24,40 @@ render() {
         <Collapse isOpen={!this.state.collapsed} navbar>
           <Nav navbar id="menuBox">
             <NavItem className="menuI">
-              <Link href="#" className="menuTitle">Hats</Link>
+              <Link to="/hats" className="menuTitle">Hats</Link>
             </NavItem>
             <NavItem className="menuI">
-              <Link href="#" className="menuTitle">Candles</Link>
+              <Link to="/candles" className="menuTitle">Candles</Link>
             </NavItem>
             <NavItem className="menuI">
-              <Link href="#" className="menuTitle">Holsters & Sheaths</Link>
+              <Link to="/holsters_sheaths" className="menuTitle">Holsters & Sheaths</Link>
             </NavItem>
             <NavItem className="menuI">
-              <Link href="#" className="menuTitle">Kitchenware</Link>
+              <Link to="/kitchenware" className="menuTitle">Kitchenware</Link>
             </NavItem>
             <NavItem className="menuI">
-              <Link href="#" className="menuTitle">Wearables</Link>
+              <Link to="/wearables" className="menuTitle">Wearables</Link>
             </NavItem>
             <NavItem className="menuI">
-              <Link href="#" className="menuTitle">Pet Products</Link>
+              <Link to="/wedding" className="menuTitle">Wedding</Link>
             </NavItem>
             <NavItem className="menuI">
-              <Link href="#" className="menuTitle">Specialties</Link>
+              <Link to="/pet" className="menuTitle">Pet Products</Link>
             </NavItem>
             <NavItem className="menuI">
-              <Link href="#" className="menuTitle">Accesories</Link>
+              <Link to="/specialties" className="menuTitle">Specialties</Link>
             </NavItem>
             <NavItem className="menuI">
-              <Link href="#" className="menuTitle">About</Link>
+              <Link to="/accesories" className="menuTitle">Accesories</Link>
             </NavItem>
             <NavItem className="menuI">
-              <Link href="#" className="menuTitle">Our Work</Link>
+              <Link to="/about" className="menuTitle">About</Link>
+            </NavItem>
+            <NavItem className="menuI">
+              <Link to="/our_work" className="menuTitle">Our Work</Link>
             </NavItem>
             <NavItem className="menuIC">
-              <Link href="#" className="menuTitle">Contact</Link>
+              <Link to="/contact" className="menuTitle">Contact</Link>
             </NavItem>
           </Nav>
         </Collapse>
@@ -63,7 +66,9 @@ render() {
       </Row>
       <Row>
         <Col className="leLogoBoxSB">
-        <img className="leLogoSB" src="http://lee-elmers.com/wp-content/uploads/2018/04/LEblacklogo-02.png" alt="logo"/> 
+          <Link to="/">
+            <img className="leLogoSB" src="http://lee-elmers.com/wp-content/uploads/2018/04/LEblacklogo-02.png" alt="logo"/>
+          </Link> 
         </Col>
       </Row>
     </div>

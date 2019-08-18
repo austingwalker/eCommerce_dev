@@ -1,0 +1,53 @@
+.productLink:hover {
+    text-decoration: none;
+}
+
+.productImg {
+    cursor: pointer;
+    border: none;
+}
+
+.productImg:hover {
+    filter: brightness(110%);
+}
+
+.cardText {
+    text-align: center;
+    color: black;
+}
+
+.item {
+    font-family: 'Roboto Condensed', sans-serif;
+    /* font-family: "Roboto","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif; */
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.price {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+}
+
+.item:hover {
+    color: rgb(197, 117, 13);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+
+    .card {
+        margin-left: 0px;
+    }
+
+    .portfolioDisplay {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+       
+    
+    }
+
+    
+
+  }

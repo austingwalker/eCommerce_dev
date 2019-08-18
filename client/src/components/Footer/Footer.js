@@ -33,7 +33,7 @@ const Footer = () => (
       <Col className="footerCol3">
         <h4 className="footerTitle" id="company">Company</h4>
         <p className="footerP"><Link className="footerNav" to="/about">About</Link></p>
-        <p className="footerP"><Link className="footerNav" to="/ourwork">Our Work</Link></p>
+        <p className="footerP"><Link className="footerNav" to="/our_work">Our Work</Link></p>
         <p className="footerP"><Link className="footerNav" to="/about">Contact</Link></p>
       </Col>
       <Col md="2"></Col>

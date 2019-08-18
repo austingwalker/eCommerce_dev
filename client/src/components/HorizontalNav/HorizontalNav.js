@@ -21,50 +21,52 @@ class HorizontalNav extends Component  {
       <div id="navBox">
         <Row id="logoRow">
           <Col className="leLogoBox">
-          <div>
-            <img className="leLogo" src="http://lee-elmers.com/wp-content/uploads/2018/04/LEblacklogo-02.png" alt="logo"/> 
-          </div>
+            <div>
+              <Link to="/">
+                <img className="leLogo" src="http://lee-elmers.com/wp-content/uploads/2018/04/LEblacklogo-02.png" alt="logo"/>
+              </Link>
+            </div>
           </Col>
         </Row>
         <Row id="mainUlRow">
         <ul id="mainUl">
           <li className="li">
-            <Link href="#" className="page">Hats</Link>
+            <Link to="/hats" className="page">Hats</Link>
           </li>
           <li className="li">
-            <Link href="#" className="page">Candles</Link>
+            <Link to="/candles" className="page">Candles</Link>
           </li>
           <li className="li"> 
-            <Link href="#" className="page">Holsters & Shealths</Link>
+            <Link to="/holsters_sheaths" className="page">Holsters & Sheaths</Link>
           </li>
           <li className="li">
-            <Link href="#" className="page">Kitchenware</Link>
+            <Link to="/kitchenware" className="page">Kitchenware</Link>
           </li>
           <li className="li">
-            <Link href="#" className="page">Wearables</Link>
+            <Link to="/wearables" className="page">Wearables</Link>
           </li>
           <li className="li">
-            <Link href="#" className="page">Wedding</Link>
+            <Link to="/wedding" className="page">Wedding</Link>
           </li>
           <li className="li">
-            <Link href="#" className="page">Pet Products</Link>
+            <Link to="/pet" className="page">Pet Products</Link>
           </li>
           <li className="li">
-            <Link href="#" className="page">Specialties</Link>
+            <Link to="/specialties" className="page">Specialties</Link>
           </li>
           <li className="li">
-            <Link href="#" className="page">Accesories</Link>
+            <Link to="/accesories" className="page">Accesories</Link>
           </li>
           <li className="li companyPage">Company
           <ul id="subUl">
               <li className="subLi">
-              <Link href="#" className="page">About</Link>
+              <Link to="/about" className="page">About</Link>
               </li>
               <li className="subLi">
-              <Link href="#" className="page">Our Work</Link>
+              <Link to="/our_work" className="page">Our Work</Link>
               </li>
               <li className="subLi">
-              <Link href="#" className="page">Contact</Link>
+              <Link to="/contact" className="page">Contact</Link>
               </li>
           </ul>
           </li>
