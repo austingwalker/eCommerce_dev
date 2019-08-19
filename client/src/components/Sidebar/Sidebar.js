@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
+import CartBtn from "../CartBtn";
 import "./Sidebar.css"
 
 class Sidebar extends Component {
@@ -18,6 +19,7 @@ render() {
   return (
     <div>
     <Row id="sidebarRow">
+    <CartBtn/>
     <div id="sidebarBox">
       <Navbar color="faded" light id="sidebarNavBox">
         <NavbarToggler onClick={this.toggle} className="mr-2" />

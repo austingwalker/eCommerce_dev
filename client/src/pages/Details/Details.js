@@ -16,15 +16,15 @@ class Details extends Component {
     });
   };
 
-  handleQuantityChange = (event) => {
-    event.preventDefault()
-    if(event.target.value === "-"){
-      this.state.quantity--
-    }
-    if(event.target.value === "+"){
-      this.state.quantity++
-    }
-  }
+  // handleQuantityChange = (event) => {
+  //   event.preventDefault()
+  //   if(event.target.value === "-"){
+  //     this.state.quantity--
+  //   }
+  //   if(event.target.value === "+"){
+  //     this.state.quantity++
+  //   }
+  // }
 
   log = () => {
     alert(this.state.quantity)

@@ -14,8 +14,10 @@ class Hats extends Component {
   render() {
     return (
      
-      <div>
+      <div className="productPageBox">
+         <header className="productHeader">Hat Collection</header>
         <Container className="productContainer">
+          
         <Row>
             
             {/* {this.state.portfolioItemsOne.map(item => ( */}

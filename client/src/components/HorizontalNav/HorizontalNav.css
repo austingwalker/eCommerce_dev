@@ -81,10 +81,12 @@
     text-decoration: none;
 }
 
-
-.li {
-    
+#subUl {
+    background: white;
+    text-align: left;
 }
+
+
 
 @media screen and (max-width: 1000px) {
     

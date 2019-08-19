@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import {Container, Row, Col} from 'reactstrap';
-  import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import CartBtn from "../CartBtn";
 import "./HorizontalNav.css"
 
 class HorizontalNav extends Component  {
@@ -19,6 +20,7 @@ class HorizontalNav extends Component  {
     return (
 
       <div id="navBox">
+      <CartBtn/>
         <Row id="logoRow">
           <Col className="leLogoBox">
             <div>
