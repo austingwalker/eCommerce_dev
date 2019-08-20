@@ -19,6 +19,7 @@
     /* border-bottom: 1px solid tan; */
 }
 
+
 #navBox {
     border-bottom: 1px solid tan;
 }
@@ -84,6 +85,10 @@
 #subUl {
     background: white;
     text-align: left;
+}
+
+.li {
+    padding: 8px;
 }
 
 

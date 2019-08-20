@@ -1,0 +1,12 @@
+#cartBtnMenu {
+    color: black;
+    width: 110px;
+    position: fixed;
+    top: 15px;;
+    right: 0px;
+}
+
+#cartBtnMenu:hover {
+    text-decoration: none;
+    color: gray;
+}

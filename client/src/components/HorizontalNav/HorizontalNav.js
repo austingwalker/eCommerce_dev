@@ -20,7 +20,7 @@ class HorizontalNav extends Component  {
     return (
 
       <div id="navBox">
-      <CartBtn/>
+      
         <Row id="logoRow">
           <Col className="leLogoBox">
             <div>
@@ -71,6 +71,9 @@ class HorizontalNav extends Component  {
               <Link to="/contact" className="page">Contact</Link>
               </li>
           </ul>
+          </li>
+          <li className="li">
+            <CartBtn id="cartBtn"/>
           </li>
           </ul>
         </Row>

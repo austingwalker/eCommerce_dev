@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 // import {Row, Col} from 'reactstrap';
-import "./CartBtn.css"
+import "./CartBtnMenu.css"
 
-const CartBtn = () => (
+const CartBtnMenu = () => (
   
   <div className="cartBtnBox">
-    <Link to="/cart" id="cartBtn">
+    <Link to="/cart" id="cartBtnMenu">
       <div >
         <i class="fas fa-shopping-cart"></i>  0  Cart
 
@@ -16,4 +16,4 @@ const CartBtn = () => (
 
 );
 
-export default CartBtn;
+export default CartBtnMenu;

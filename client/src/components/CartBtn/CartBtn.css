@@ -1,14 +1,8 @@
+#cartBtn {
+    color: black;
+}
+
 #cartBtn:hover {
     text-decoration: none;
     color: gray;
-}
-
-#cartBtn {
-    border: 1px solid black;
-    color: black;
-    padding: 10px;
-    width: 110px;
-    position: fixed;
-    top: 10px;;
-    right: 25px;
 }
