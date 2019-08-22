@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem, Row, Col } from 'reactstrap';
 import CartBtnMenu from "../CartBtnMenu";
 import "./Sidebar.css"
 

@@ -3,7 +3,8 @@ import React, { Component } from "react";
 import { Row, Col } from 'reactstrap';
 // import { Link } from "react-router-dom";
 import Insta from "../../components/Insta"
-import axios from 'axios'
+import API from "../../utils/API";
+// import axios from 'axios'
 import "./Home.css"
 
 class Home extends Component {
@@ -12,32 +13,34 @@ class Home extends Component {
     instaRow2: [],
   };
 
-  // componentDidMount() {
-  //   axios.get('https://api.instagram.com/v1/users/self/media/recent/?access_token=18089565266.844d947.aa967012aafe470cb906a68ba2f12128')
-  //   .then(res => {
-  //    console.log(res.data.data);
-  //    const fullArr = res.data.data
-  //    const arr12 = fullArr.slice(0, 12)
-  //     console.log(arr12)
-  //     let arr = arr12;
-  //     let half = Math.floor(arr.length / 2)
+componentDidMount(){
+    this.renderInstagram()
+}
 
-  //     let arrFirstHalf = arr.slice(0, half);
-  //     let arrSecondHalf = arr.slice(half, arr.length);
+renderInstagram = () => {
+API.getInstagram()
+  .then(res => {
+    // console.log(res)
+    console.log(res.data.data);
+    const fullArr = res.data.data
+    const arr12 = fullArr.slice(0, 12)
+    console.log(arr12)
+    let arr = arr12;
+    let half = Math.floor(arr.length / 2)
 
-  //     console.log(arrFirstHalf)
-  //     console.log(arrSecondHalf)
+    let arrFirstHalf = arr.slice(0, half);
+    let arrSecondHalf = arr.slice(half, arr.length);
 
-  //     this.setState({
-  //       instaRow1: arrFirstHalf,
-  //       instaRow2: arrSecondHalf,
+    console.log(arrFirstHalf)
+    console.log(arrSecondHalf)
 
-  //     })
-  //   })
-  //   .catch(error => {
-  //     console.log(error);
-  //   })
-  // }
+    this.setState({
+    instaRow1: arrFirstHalf,
+    instaRow2: arrSecondHalf,
+  })
+})
+  .catch(err => console.log(err));   
+}
 
 
   render() {

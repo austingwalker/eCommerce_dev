@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import API from "../../utils/API";
-import { Container, Row, Col } from 'reactstrap';
-import { Link } from "react-router-dom";
+import { Container} from 'reactstrap';
+// import { Link } from "react-router-dom";
 import CartLarge from "../../components/CartLarge"
 import CartSmall from "../../components/CartSmall"
 import "./Cart.css"

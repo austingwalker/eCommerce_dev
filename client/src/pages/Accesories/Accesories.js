@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import API from "../../utils/API";
-import { Row, Col } from 'reactstrap';
-import { Link } from "react-router-dom";
+// import { Row, Col } from 'reactstrap';
+// import { Link } from "react-router-dom";
 import "./Accesories.css"
 
 class Accesories extends Component {

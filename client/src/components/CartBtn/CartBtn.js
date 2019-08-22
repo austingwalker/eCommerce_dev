@@ -7,9 +7,8 @@ const CartBtn = () => (
   
   <div className="cartBtnBox">
     <Link to="/cart" id="cartBtn">
-      <div >
-        <i class="fas fa-shopping-cart"></i>  0  Cart
-
+      <div>
+        <i className="fas fa-shopping-cart"></i>  0  Cart
       </div>
     </Link>
   </div>

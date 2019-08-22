@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Container, Row, Col} from 'reactstrap';
+import {Container} from 'reactstrap';
 import HorizontalNav from "../HorizontalNav";
 import Sidebar from "../Sidebar";
 // import CartBtn from "../CartBtn";
@@ -7,7 +7,7 @@ import "./Navigation.css"
 
 class Navigation extends Component  {
   state = {
-    windowSize: false,
+    // windowSize: false,
   };
 
 

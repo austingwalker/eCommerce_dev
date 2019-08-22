@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import API from "../../utils/API";
 import { Container, Row, Col } from 'reactstrap';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./CartSmall.css"
 
 class CartLarge extends Component {
@@ -20,6 +20,7 @@ class CartLarge extends Component {
     return (
      
       <div className="shoppingCartBoxS">
+      <form>
       <Container>
         <Row>
           <div className="cartItemBoxS">
@@ -33,57 +34,25 @@ class CartLarge extends Component {
           </div>
         </Row>
         <Row>
-          <div className="quantityPriceBox">
-          <div className="cartItemTotalS">$30.00</div>
-            <div className="cartQuantityBoxS">
-              <input type="number" className="form-control cartQuantityS" name="quantity" value={this.state.quantity} placeholder="" onChange={this.handleInputChange}/>
+         <Col></Col>
+         <Col></Col>
+            <Col>
+            <div className="quantityBoxS">
+            <figcaption className="cartQuantityTitle"><strong>Quantity</strong></figcaption>
+              <div className="cartQuantityBoxS">
+                <input type="number" className="form-control cartQuantityS" name="quantity" value={this.state.quantity} placeholder="" onChange={this.handleInputChange}/>
+              </div>
+              </div> 
+              </Col>
+              <Col>
+            <div >
+            <figcaption className="cartTotalTitle"><strong>Total</strong></figcaption>
+              <div className="cartItemTotalS">$30.00</div>
             </div>
-          </div>
+            </Col>
         </Row>
-        {/* <header className="productHeader">Shopping Cart</header>
-        <Container id="shoppingCartContainer">
-          <Row>
-          <table className="table table-striped cartTable">
-                  <thead>
-                    <tr>
-                      <th>PRODUCT</th>
-                      <th>PRICE</th>
-                      <th>QUANTITY</th>
-                      <th id="thTotal">TOTAL</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                  {this.state.files.map(file => (
-                    <tr id="form-row">
-                     <td>
-                     <div className="cartItemBox">
-                       <div className="itemPicBox">
-                        <img  src="https://scontent.cdninstagram.com/vp/e2b7502839a5f6d4e216c648b091cf27/5DCF88E0/t51.2885-15/sh0.08/e35/s640x640/66656980_1218894461652176_6656340937380864611_n.jpg?_nc_ht=scontent.cdninstagram.com" className="card-img-top itemPic" alt="hat"/>
-                      </div>
-                      <div className="itemDescription">
-                        <figcaption className="cartItemTitle">Hat</figcaption>
-                        <p>Cutom ATX Leather Patch Hat</p>
-                      </div>
-                     </div>
-                     </td>
-                     <td className="priceTd">
-                      <div className="cartPrice">$30.00</div>
-                     </td>
-                     <td>
-                     <div className="cartQuantityBox">
-                     <input type="number" className="form-control cartQuantity" name="quantity" value={this.state.quantity} placeholder="" onChange={this.handleInputChange}/>
-                     </div>
-                     </td>
-                     <td>
-                     <div className="cartItemTotal">$30.00</div>
-                     </td>
-                    </tr>
-                    ))}
-                  </tbody>
-                  </table>
-          </Row>
-        </Container> */}
         </Container>
+        </form>
       </div>
 
     );

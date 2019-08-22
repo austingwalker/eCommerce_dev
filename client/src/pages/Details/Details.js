@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import API from "../../utils/API";
 import { Container, Row, Col } from 'reactstrap';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./Details.css"
 
 class Details extends Component {

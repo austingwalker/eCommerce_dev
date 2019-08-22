@@ -1,7 +1,10 @@
 import axios from "axios";
 
 export default {
-  getTest: function() {
-    return axios.get("/api/test");
-  }
+  getInstagram: function() {
+    return axios.get("/api/instagram");
+  },
+  getProducts: function() {
+    return axios.get("/api/products");
+  },
 };

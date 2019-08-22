@@ -7,7 +7,12 @@
     border: none;
 }
 
-.productImg:hover {
+.productImgBox {
+    cursor: pointer;
+    border: none;
+}
+
+.productImgBox:hover {
     filter: brightness(110%);
 }
 

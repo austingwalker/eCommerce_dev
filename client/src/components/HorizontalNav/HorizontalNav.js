@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Container, Row, Col} from 'reactstrap';
+import {Row, Col} from 'reactstrap';
 import { Link } from "react-router-dom";
 import CartBtn from "../CartBtn";
 import "./HorizontalNav.css"
