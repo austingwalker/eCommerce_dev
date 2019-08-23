@@ -15,7 +15,7 @@ componentDidMount(){
 }
   
 renderProducts = () => {
-  API.getProducts()
+  API.getProducts("hats")
     .then(res => {
           console.log(res)
       this.setState({ products: res.data})

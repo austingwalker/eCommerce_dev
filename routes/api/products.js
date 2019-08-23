@@ -2,7 +2,7 @@ const router = require("express").Router();
 const productController = require("../../controllers/productController");
 
 
-router.route("/")
+router.route("/:type")
   .get(productController.findProducts);
 
 
