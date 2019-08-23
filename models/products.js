@@ -24,7 +24,10 @@ module.exports = function(sequelize, DataTypes) {
         validate: {
           len: [1]
         }
-      } 
+      }, 
+      category: {
+        type: DataTypes.JSON
+      },
     }, {timestamps: false});
     return Products;
   };
