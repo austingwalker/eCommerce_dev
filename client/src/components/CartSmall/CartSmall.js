@@ -6,8 +6,17 @@ import "./CartSmall.css"
 
 class CartLarge extends Component {
   state = {
-    quantity: 1
+    quantity: 1,
+    cart: []
   };
+
+  componentDidMount() {
+    const cartData = JSON.parse(localStorage.getItem('Cart'));
+    console.log("CARTDATA: ")
+    console.log(cartData)
+    this.setState({cart: cartData})
+    
+}
 
   handleInputChange = event => {
     const { name, value } = event.target;
@@ -21,15 +30,17 @@ class CartLarge extends Component {
      
       <div className="shoppingCartBoxS">
       <form>
+      {this.state.cart.map(i => (
+      
       <Container>
         <Row>
           <div className="cartItemBoxS">
             <div className="itemPicBoxS">
-              <img  src="https://scontent.cdninstagram.com/vp/e2b7502839a5f6d4e216c648b091cf27/5DCF88E0/t51.2885-15/sh0.08/e35/s640x640/66656980_1218894461652176_6656340937380864611_n.jpg?_nc_ht=scontent.cdninstagram.com" className="card-img-top itemPicS" alt="hat"/>
+              <img  src={`/assets/images/${i.item.img}.png`} className="card-img-top itemPicS" alt="hat"/>
             </div>
           <div className="itemDescriptionS">
-              <figcaption className="cartItemTitleS">Hat</figcaption>
-              <p>Cutom ATX Leather Patch Hat</p>
+              <figcaption className="cartItemTitleS">{i.item.title}</figcaption>
+              <p>{i.item.description}</p>
             </div>
           </div>
         </Row>
@@ -47,11 +58,12 @@ class CartLarge extends Component {
               <Col>
             <div >
             <figcaption className="cartTotalTitle"><strong>Total</strong></figcaption>
-              <div className="cartItemTotalS">$30.00</div>
+              <div className="cartItemTotalS">{i.item.price}</div>
             </div>
             </Col>
         </Row>
         </Container>
+        ))}
         </form>
       </div>
 

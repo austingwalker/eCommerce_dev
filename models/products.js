@@ -18,6 +18,10 @@ module.exports = function(sequelize, DataTypes) {
           type: DataTypes.DECIMAL,
           allowNull: false
       },
+      quantity: {
+        type: DataTypes.INTEGER,
+        allowNull: false
+      },
       img: {
         type: DataTypes.STRING,
         allowNull: false,

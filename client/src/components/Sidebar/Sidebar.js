@@ -19,7 +19,9 @@ render() {
   return (
     <div>
     <Row id="sidebarRow">
-    <CartBtnMenu/>
+    <CartBtnMenu
+    cartQuantity={this.props.cartQuantity}
+    />
     <div id="sidebarBox">
       <Navbar color="faded" light id="sidebarNavBox">
         <NavbarToggler onClick={this.toggle} className="mr-2" />
@@ -50,7 +52,7 @@ render() {
               <Link to="/specialties" className="menuTitle">Specialties</Link>
             </NavItem>
             <NavItem className="menuI">
-              <Link to="/accesories" className="menuTitle">Accesories</Link>
+              <Link to="/accessories" className="menuTitle">Accessories</Link>
             </NavItem>
             <NavItem className="menuI">
               <Link to="/about" className="menuTitle">About</Link>

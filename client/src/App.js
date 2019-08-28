@@ -9,7 +9,7 @@ import Wearables from "./pages/Wearables";
 import Wedding from "./pages/Wedding";
 import Pet from "./pages/Pet";
 import Specialties from "./pages/Specialties";
-import Accesories from "./pages/Accesories";
+import Accessories from "./pages/Accessories";
 import Details from "./pages/Details";
 import Cart from "./pages/Cart";
 import About from "./pages/About";
@@ -35,8 +35,8 @@ const App = () => (
         <Route exact path="/wedding" component={Wedding} />
         <Route exact path="/pet" component={Pet} />
         <Route exact path="/specialties" component={Specialties} />
-        <Route exact path="/accesories" component={Accesories} />
-        <Route exact path="/details" component={Details} />
+        <Route exact path="/accessories" component={Accessories} />
+        <Route exact path="/details/:id" component={Details} />
         <Route exact path="/cart" component={Cart} />
         <Route exact path="/about" component={About} />
         <Route exact path="/our_work" component={OurWork} />

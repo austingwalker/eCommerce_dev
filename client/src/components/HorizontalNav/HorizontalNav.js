@@ -57,7 +57,7 @@ class HorizontalNav extends Component  {
             <Link to="/specialties" className="page">Specialties</Link>
           </li>
           <li className="li">
-            <Link to="/accesories" className="page">Accesories</Link>
+            <Link to="/accessories" className="page">Accessories</Link>
           </li>
           <li className="li companyPage">Company
           <ul id="subUl">
@@ -73,7 +73,9 @@ class HorizontalNav extends Component  {
           </ul>
           </li>
           <li className="li">
-            <CartBtn id="cartBtn"/>
+            <CartBtn id="cartBtn"
+            cartQuantity={this.props.cartQuantity}
+            />
           </li>
           </ul>
         </Row>

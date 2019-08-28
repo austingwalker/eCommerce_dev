@@ -36,7 +36,7 @@ class Cart extends Component {
       return (
     <div>
     <Container className="cartContainer">
-      {this.state.windowSize ? <CartLarge /> : <CartSmall/>}
+      {this.state.windowSize  ? <CartLarge /> : <CartSmall/>}
     </Container>
     </div>
 

@@ -6,8 +6,22 @@ module.exports = {
     console.log(req.params)
     const type = req.params.type;
     console.log(type)
-    // db.Products.findAll({}).then(function(dbProducts) {
-    //   res.json(dbProducts);
-    // });
+    db.Products.findAll({
+      where: {
+        category: {[type]: true}
+      }
+    }).then(function(dbProducts) {
+      res.json(dbProducts);
+    });
+  },
+  findDetails: function(req, res){
+    db.Products.findOne({
+      where: {
+        id: req.params.id
+      }
+    })
+      .then(function(dbProduct) {
+        res.json(dbProduct);
+      });
   }
 };

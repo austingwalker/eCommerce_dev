@@ -3,9 +3,9 @@ import API from "../../utils/API";
 import { Container, Row, Col } from 'reactstrap';
 // import { Link } from "react-router-dom";
 import ProductCard from "../../components/ProductCard"
-import "./Hats.css"
+import "./Accessories.css"
 
-class Hats extends Component {
+class Accessories extends Component {
   state = {
         products: []
   };
@@ -15,7 +15,7 @@ componentDidMount(){
 }
   
 renderProducts = () => {
-  API.getProducts("hats")
+  API.getProducts("Accesories")
     .then(res => {
       this.setState({ products: res.data})
     })
@@ -25,7 +25,7 @@ renderProducts = () => {
   render() {
     return (
       <div className="productPageBox">
-         <header className="productHeader">Hat Collection</header>
+         <header className="productHeader">Accessories Collection</header>
         <Container className="productContainer">
         <Row>
             {this.state.products.map(item => (
@@ -47,4 +47,4 @@ renderProducts = () => {
   }
 }
 
-export default Hats;
+export default Accessories;
