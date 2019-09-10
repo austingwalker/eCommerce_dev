@@ -20,19 +20,14 @@ componentDidMount(){
 renderInstagram = () => {
 API.getInstagram()
   .then(res => {
-    // console.log(res)
-    console.log(res.data.data);
     const fullArr = res.data.data
     const arr12 = fullArr.slice(0, 12)
-    console.log(arr12)
+
     let arr = arr12;
     let half = Math.floor(arr.length / 2)
 
     let arrFirstHalf = arr.slice(0, half);
     let arrSecondHalf = arr.slice(half, arr.length);
-
-    console.log(arrFirstHalf)
-    console.log(arrSecondHalf)
 
     this.setState({
     instaRow1: arrFirstHalf,
@@ -45,7 +40,6 @@ API.getInstagram()
 
   render() {
     return (
-     
       <div>
         <Row id="storyRow">
           <div className="storyColVid">

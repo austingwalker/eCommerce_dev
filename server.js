@@ -28,7 +28,7 @@ db.sequelize.sync({ force: false }).then(function() {
     console.log(`🌎 ==> Server now on port ${PORT}!`);
   });
 });
-
+ 
 
 
 

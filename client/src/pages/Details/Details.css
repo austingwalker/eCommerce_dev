@@ -42,17 +42,68 @@
 #quantityLabel {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
+    display: flex;
+    width: 85%;
+    margin: auto;
+    padding-top: 15px;
+}
+
+#addSubQ{
+    width: 50%;
+}
+
+#minusBtnBox {
+    display: inline-block;
+    width: 20%;
+    height: 100%
+}
+
+#addBtnBox {
+    display: inline-block;
+    width: 20%;
+    height: 100%
+    
+}
+
+#minusBtn {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: none;
+    cursor: pointer;
+    
+}
+
+#addBtn {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
+#minusBtn:hover {
+    background: #c7c6c6; 
+}
+
+#addBtn:hover {
+    background: #c7c6c6;
 }
 
 .quantityEdit {
-    width: 20%;
-    float: left;
+    /* width: 100%; */
+    display: inline-block;
+    /* float: left; */
     /* margin: auto; */
-    margin-right: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .addToCartBtn {
-    float: left;
+    /* float: left; */
+    display: inline-block;
     background: white;
     color: black;
     border: none;

@@ -65,13 +65,14 @@ class Details extends Component {
   }
 
   addToCart = () => {
-     //localStorage.clear()
-     let currentCart = JSON.parse(localStorage.getItem('Cart'));
-    if(!currentCart){
-      currentCart = []
-    }
-    currentCart.push(this.state.item)
-    localStorage.setItem('Cart', JSON.stringify(currentCart))
+    this.props.update(this.state.item)
+    //  //localStorage.clear()
+    // let currentCart = JSON.parse(localStorage.getItem('Cart'));
+    // if(!currentCart){
+    //   currentCart = []
+    // }
+    // currentCart.push(this.state.item)
+    // localStorage.setItem('Cart', JSON.stringify(currentCart))
   }
 
   log = () => {
@@ -100,13 +101,19 @@ class Details extends Component {
               <div id="descriptionBox">
                 <p className="description">{this.state.item.description}</p>
               </div>
+              <div>
+                <label id="quantityLabel"><strong>QUANTITY</strong></label>
+              </div>
               <div className="quantityBox">
                 {/* <form className="quantityForm"> */}
-                <label id="quantityLabel"><strong>QUANTITY</strong></label>
-                <div>
-                  <button onClick={this.handleQuantityChange} value="-">-</button>
+                <div id="addSubQ">
+                  <div id="minusBtnBox">
+                  <button id="minusBtn" onClick={this.handleQuantityChange} value="-">-</button>
+                  </div> 
                   <div className="quantityEdit">{this.state.quantity}</div>
-                  <button onClick={this.handleQuantityChange} value="+">+</button>
+                  <div id="addBtnBox">
+                  <button id="addBtn" onClick={this.handleQuantityChange} value="+">+</button>
+                  </div>
                 </div>
                 {/* ------------------------------------------------------------------------ */}
                 {/* <button onClick={this.handleQuantityChange} value="-">-</button>

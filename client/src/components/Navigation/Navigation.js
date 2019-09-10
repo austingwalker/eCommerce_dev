@@ -15,18 +15,24 @@ class Navigation extends Component  {
 componentDidMount() {
   window.addEventListener("resize", this.resize.bind(this));
     this.resize();
- 
-    
-  const localData = JSON.parse(localStorage.getItem('Cart'));
-  console.log("CART: ")
-  console.log(localData)
-  if(!localData){
-    this.setState({cartQuantity: []})
-  } else {
-  this.setState({cartQuantity: localData})
-  }
+
+  this.setState({
+    cartQuantity: this.props.quantity
+  })
+  
 
 }
+
+// updateCart = () => {
+//   const localData = JSON.parse(localStorage.getItem('Cart'));
+//   console.log("CART: ")
+//   console.log(localData)
+//   if(!localData){
+//     this.setState({cartQuantity: []})
+//   } else {
+//   this.setState({cartQuantity: localData})
+//   }
+// }
 
 // componentWillUpdate() {
 //   const localData = JSON.parse(localStorage.getItem('Cart'));
